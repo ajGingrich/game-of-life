@@ -15,4 +15,4 @@ User Stories
 * When I press start, the game will play out.
 * Each time the board changes, I can see how many generations have gone by.
 
-Check out the app at [https://life320.herokuapp.com/](https://life320.herokuapp.com/)
+Check out the app at [https://gameoflife320.herokuapp.com/](https://gameoflife320.herokuapp.com/)
