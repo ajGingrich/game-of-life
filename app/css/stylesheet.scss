@@ -1,0 +1,75 @@
+$backgroundColor: rgb(199, 203, 219);
+$gameBackground: rgb(139, 143, 153);
+$borderHeight: 480px;
+$borderWidth: 780px;
+$gridBorder: #333;
+
+body {
+  background-color: $backgroundColor;
+  text-align: center;
+}
+.header {
+  background-color: $gameBackground;
+  margin-bottom: 15px;
+}
+.gameBorder {
+  background-color: $gameBackground;
+  height: $borderHeight;
+  width: $borderWidth;
+  border-radius: 10px;
+  margin: auto auto 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.gameContainer {
+  height: $borderHeight - 30px;
+  width: $borderWidth - 30px;
+  font-size: 0;
+}
+.square {
+  &:hover {
+    cursor: pointer;
+  }
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-top: 1px solid $gridBorder;
+  border-left: 1px solid $gridBorder;
+  display: inline-block;
+}
+.alive {
+  @extend .square;
+  background-color: red;
+}
+.dying {
+  @extend .square;
+  background-color: orangered;
+}
+.btn {
+  background-color: $gameBackground;
+  font-weight: bold;
+}
+.start {
+  margin-top: -5px;
+}
+.stop,
+.clear {
+  margin-left: 15px;
+  margin-top: -5px;
+}
+#generation {
+  font-family: Helvetica, Arial, serif;
+  font-size: 24px;
+  margin-left: 95px;
+  margin-right: 95px;
+}
+.slow,
+.medium {
+  margin-right: 15px;
+  margin-top: -5px;
+}
+.fast {
+  margin-top: -5px;
+}
